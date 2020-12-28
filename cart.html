@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="index.html"><img class="header__search-logo" src="img/logo.svg" alt="Лого" width="44"
+                        height="38"></a>
+                <button type="button" class="header__search-loupe"><img class="header__search-logo" src="img/loupe.svg"
+                        alt="Поиск" width="26" height="26"></button>
+            </div>
+
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><button type="menu" class="header__menu-button"><img src="img/menu.svg"
+                            alt="Меню" width="32" height="23"></button></li>
+                <li class="header__menu-item"><a href="registration.html" class="header__menu-button"><img
+                            src="img/account.svg" alt="Аккаунт" width="29" height="29"></a></li>
+                <li class="header__menu-item"><a href="cart.html" class="header__menu-button"><img src="img/bucket.svg"
+                            alt="Корзина" width="32" height="29"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="page__title">
+            <h1 class="visually-hidden">page__title</h1>
+            <h2 class="page__title-text container">shopping cart</h2>
+        </section>
+        <section class="cart container">
+            <h1 class="visually-hidden">cart</h1>
+            <div class="cart__shopper">
+                <div class="cart__shopper-item shopper-item">
+                    <img class="shopper-item-img" src="img/cart_item.jpg" alt="Фото товара" width="262" height="306">
+                    <div class="shopper-item-content">
+                        <h2 class="shopper-item-title">mango people t-shirt</h2>
+                        <p class="shopper-item-text">
+                            Price: <span class="shopper-item-price">$300</span><br>
+                            Color: Red<br>
+                            Size: Xl<br>
+                            Quantity: 2<br>
+                        </p>
+                        <button type="button">
+                            <img class="cross" src="img/cross.svg" alt="Закрыть" width="18" height="18">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart__shopper-item shopper-item">
+                    <img class="shopper-item-img" src="img/cart_item2.jpg" alt="Фото товара" width="262" height="306">
+                    <div class="shopper-item-content">
+                        <h2 class="shopper-item-title">mango people<br>t-shirt</h2>
+                        <p class="shopper-item-text">
+                            Price: <span class="shopper-item-price">$300</span><br>
+                            Color: Red<br>
+                            Size: Xl<br>
+                            Quantity: 2<br>
+                        </p>
+                        <button type="button">
+                            <img class="cross" src="img/cross.svg" alt="Закрыть" width="18" height="18">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart__shopper-buttons">
+                    <button type="reset" class="cart__shopper-button">clear shopping cart</button>
+                    <button type="button" class="cart__shopper-button">continue shopping</button>
+                </div>
+            </div>
+            <form action="#" class="cart__form">
+                <label class="cart__form-label" for="country">shipping adress</label>
+                <input type="text" id="country" placeholder="Country">
+                <input type="text" id="state" placeholder="State">
+                <input type="text" id="postcode" placeholder="Postcode / Zip">
+                <button class="cart__form-button">get a quote</button>
+                <div class="cart__form-subtotal form-subtotal">
+                    <h2 class="form-subtotal-title">sub total $900</h2>
+                    <h3 class="form-subtotal-grand">grand total <span class="form-subtotall-price">$900</span></h3>
+                    <button type="button" class="form-subtotal-button">proceed to checkout</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="subscribe">
+            <h2 class="visually-hidden">subscribe</h2>
+            <ul class="subscribe__content container">
+                <li class="subscribe__content-item">
+                    <img src="img/subscribe_face.svg" alt="Фото девушки" class="subscribe__content-img" width="96"
+                        height="96">
+                    <p class="subscribe__content-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        <span class="subscribe__content-span"> a pulvinar purus condimentum“</span></p>
+                </li>
+                <li class="subscribe__content-item">
+                    <h2 class="subscribe__form-text">subscribe <br>
+                        <span class="subscribe__form-span">for our newletter and promotion</span></h2>
+                    <input class="subscribe__form-input" placeholder="Enter Your Email" type="text">
+                    <button type="button" class="subscribe__form-button">Subscribe</button>
+                </li>
+            </ul>
+        </section>
+        <section class="socials">
+            <h2 class="visually-hidden">socials</h2>
+            <ul class="socials__list container">
+                <li class="social__item">
+                    <h2 class="rights">© 2021 Brand All Rights Reserved.</h2>
+                </li>
+                <li class="social__item">
+                    <ul class="social__item-icons">
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/facebook.svg"
+                                    alt="Facebook" class="social__item-img" width="31" height="32"></a></li>
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/inst.svg"
+                                    alt="Instagram" class="social__item-img" width="31" height="32"></a></li>
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/pint.svg"
+                                    alt="Pinterest" class="social__item-img" width="31" height="32"></a></li>
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/twitter.svg"
+                                    alt="Twitter" class="social__item-img" width="31" height="32"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

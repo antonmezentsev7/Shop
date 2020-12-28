@@ -1,0 +1,41 @@
+.brand {
+    display: flex;
+}
+
+.brand__name {
+    width: 800px;
+    background-color: #F1E4E6;
+}
+
+
+
+.brand__name-text {
+    position: relative;
+    width: 377px;
+    height: 93px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 38px;
+    color: #222222;
+    margin-top: 335px;
+    margin-left: 92px;
+}
+
+.brand__name-text::before {
+    position: absolute;
+    background-color: #F16D7F;
+    content: "";
+    width: 12px;
+    height: 80px;
+    left: -24px;
+    top: -2px;
+}
+
+.brand__name-span{
+    font-size: 32px;
+}
+
+.othercolor{
+    color: #F16D7F;
+}

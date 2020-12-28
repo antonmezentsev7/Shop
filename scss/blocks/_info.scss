@@ -1,0 +1,35 @@
+.info {
+    margin-top: 95px;
+    background-color: #222224;
+    height: 341px;
+}
+
+.info__list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 103px;
+    align-items: center;
+}
+
+.info__item {
+    
+    text-align: center;
+}
+
+.info__item-img {
+    margin-bottom: 23px;
+}
+
+.info__item-title {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-bottom: 16px;
+}
+
+.info__item-text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+}

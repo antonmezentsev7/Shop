@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="index.html"><img class="header__search-logo" src="img/logo.svg" alt="Лого" width="44"
+                        height="38"></a>
+                <button type="button" class="header__search-loupe"><img class="header__search-logo" src="img/loupe.svg"
+                        alt="Поиск" width="26" height="26"></button>
+            </div>
+
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><button type="menu" class="header__menu-button"><img src="img/menu.svg"
+                            alt="Меню" width="32" height="23"></button></li>
+                <li class="header__menu-item"><a href="registration.html" class="header__menu-button"><img
+                            src="img/account.svg" alt="Аккаунт" width="29" height="29"></a></li>
+                <li class="header__menu-item"><a href="cart.html" class="header__menu-button"><img src="img/bucket.svg"
+                            alt="Корзина" width="32" height="29"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="page__title">
+            <h1 class="visually-hidden">page__title</h1>
+            <h2 class="page__title-text container">registration</h2>
+        </section>
+        <section class="registration container">
+            <div class="registration__form">
+                <form action="#">
+                    <label class="label" for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="First Name">
+                    <input type="text" id="lastname" placeholder="Last Name">
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label class="label-radio" for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label class="label-radio" for="female">Female</label>
+                    </div>
+                    <label class="label" for="login">Login Details</label>
+                    <input type="text" id="login" placeholder="Login">
+                    <input type="password" id="password" placeholder="Password">
+                    <p class="form__text">Please use 8 or more characters, with at least 1 number and a <br> mixture of
+                        uppercase and lowercase letters</p>
+                    <button type="submit" class="form__button">
+                        <span class="form__button-text">join now</span>
+                        <img class="form__button-img" src="./img/arrow.svg" alt="arrow">
+                    </button>
+                </form>
+            </div>
+
+            <div class="registration__text">
+                <h2 class="registration__text-title">loyalty has its perks</h2>
+                <p class="registration__text-content">Get in on the loyalty program where you can earn points and <br>
+                    unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="registration__text-list">
+                    <li class="registration__text-point">15% off welcome offer</li>
+                    <li class="registration__text-point">Free shipping, returns and exchanges on all orders</li>
+                    <li class="registration__text-point">$10 off a purchase on your birthday</li>
+                    <li class="registration__text-point">Early access to products</li>
+                    <li class="registration__text-point">Exclusive offers & rewards</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="subscribe">
+            <h2 class="visually-hidden">subscribe</h2>
+            <ul class="subscribe__content container">
+                <li class="subscribe__content-item">
+                    <img src="img/subscribe_face.svg" alt="Фото девушки" class="subscribe__content-img" width="96"
+                        height="96">
+                    <p class="subscribe__content-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        <span class="subscribe__content-span"> a pulvinar purus condimentum“</span></p>
+                </li>
+                <li class="subscribe__content-item">
+                    <h2 class="subscribe__form-text">subscribe <br>
+                        <span class="subscribe__form-span">for our newletter and promotion</span></h2>
+                    <input class="subscribe__form-input" placeholder="Enter Your Email" type="text">
+                    <button type="button" class="subscribe__form-button">Subscribe</button>
+                </li>
+            </ul>
+        </section>
+        <section class="socials">
+            <h2 class="visually-hidden">socials</h2>
+            <ul class="socials__list container">
+                <li class="social__item">
+                    <h2 class="rights">© 2021 Brand All Rights Reserved.</h2>
+                </li>
+                <li class="social__item">
+                    <ul class="social__item-icons">
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/facebook.svg"
+                                    alt="Facebook" class="social__item-img" width="31" height="32"></a></li>
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/inst.svg"
+                                    alt="Instagram" class="social__item-img" width="31" height="32"></a></li>
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/pint.svg"
+                                    alt="Pinterest" class="social__item-img" width="31" height="32"></a></li>
+                        <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/twitter.svg"
+                                    alt="Twitter" class="social__item-img" width="31" height="32"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
