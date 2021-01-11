@@ -85,3 +85,14 @@
     text-decoration: none;
     color: #6F6E6E;
 }
+
+
+@include mobile {
+    .header__menu-item:not(:first-child) {
+        display: none;
+    }
+    
+    .header__menu-item:first-child {
+        margin-right: 0;
+    }
+}
