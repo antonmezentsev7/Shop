@@ -47,6 +47,7 @@
 
 .fetured__item {
     margin-top: 30px;
+    min-width: 33%;
 }
 
 .fetured__item-pic:hover .fetured__item-img {
@@ -98,6 +99,48 @@
     width: 211px;
     height: 47px;
     margin-top: 63px;
-    margin-left: 465px;
+    margin: 0 auto;
     background: #FFFFFF;
 }
+
+
+@include tablet {
+    .fetured__title {
+        margin-top: 154px;
+    }
+
+    .fetured__list {
+        margin-top: 55px;
+    }
+
+    .fetured__item {
+        margin-top: 17px;
+        width: 49%;
+    }
+
+    .fetured__all {
+        margin: 0 auto;
+    }
+}
+
+
+@include mobile {
+    .fetured__title {
+        margin-top: 64px;
+    }
+
+    .fetured__list {
+        margin-top: 55px;
+    }
+
+    .fetured__item {
+        margin-top: 17px;
+        width: 100%;
+    }
+
+    .fetured__all {
+        margin: 0 auto;
+        margin-top: 41px;
+    }
+}
+

@@ -1,7 +1,7 @@
 .info {
     margin-top: 95px;
     background-color: #222224;
-    height: 341px;
+    min-height: 341px;
 }
 
 .info__list {
@@ -33,3 +33,44 @@
     line-height: 17px;
     color: #FBFBFB;
 }
+
+@include tablet {
+    .info {
+        margin-top: 65px;
+        min-height: 610px;
+    }
+
+    .info__list {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .info__item {
+        padding-top: 48px;
+    }
+
+    .info__item:last-child {
+        padding-bottom: 64px;
+    }
+
+    .info__item-text {
+        width: 360px;
+    }
+}    
+
+@include mobile {
+    .info {
+        margin-top: 96px;
+        min-height: 610px;
+    }
+
+    .info__list {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .info__item {
+        padding-top: 48px;
+    }
+
+}    
