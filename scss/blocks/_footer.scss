@@ -1,6 +1,7 @@
 .subscribe {
-    height: 448px;
-    background-image: url(../IMG/subscribebckgr.png);
+    min-height: 448px;
+    background-image: url(../img/subscribebckgr.png);
+    background-position: center;
 }
 
 .subscribe__content {
@@ -35,8 +36,6 @@
     text-align: center;
     color: #222224;
     margin-bottom: 32px;
-    width: 557px;
-    height: 61px;
 }
 
 .subscribe__form-span {
@@ -73,7 +72,7 @@
 }
 
 .socials {
-    height: 79px;
+    min-height: 79px;
     background: #222224;
     
 }
@@ -98,4 +97,63 @@
 
 .social__item-icon:not(:last-child) {
     margin-right: 8px;
+}
+
+@include tablet {
+    .subscribe__content {
+        flex-direction: column;
+        padding-top: 53px;
+        padding-bottom: 219px;
+    }
+
+    .subscribe__form-text {
+        padding-top: 24px;
+        margin-bottom: 27px;
+    }
+
+    .subscribe__content-item {
+        margin: 0 auto;
+    }
+
+    .subscribe {
+        background-size: cover;
+        background-position: left;
+    }
+}
+
+@include mobile {
+
+    .subscribe {
+        background-size: cover;
+        background-position: left;
+    }
+
+    .subscribe__content {
+        flex-direction: column;
+        padding-top: 54px;
+        padding-bottom: 109px;
+    }
+
+    .subscribe__content-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .subscribe__content-item {
+        margin: 0 auto;
+    }
+
+    .socials__list {
+        padding-top: 43px;
+        flex-direction: column-reverse;
+    }
+
+    .social__item {
+        margin: 0 auto;
+    }
+
+    .rights {
+        padding-top: 40px;
+        padding-bottom: 9px;
+    }
 }

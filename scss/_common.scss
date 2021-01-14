@@ -54,7 +54,6 @@ table {
   }
 
 body {
-    width: 1600px;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
@@ -85,4 +84,16 @@ a:active {
 
 button:active {
     opacity: 0.4;
+}
+
+@include tablet {
+    .container {
+        width: 95.83%;
+    }
+}
+
+@include mobile {
+    .container {
+        width: 92%;
+    }
 }
