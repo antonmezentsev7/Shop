@@ -1,6 +1,7 @@
 .subscribe {
     min-height: 448px;
-    background-image: url(../../img/subscribebckgr.png);
+    background-image: url(../img/subscribebckgr.png);
+    background-position: center;
 }
 
 .subscribe__content {
@@ -35,8 +36,6 @@
     text-align: center;
     color: #222224;
     margin-bottom: 32px;
-    width: 557px;
-    height: 61px;
 }
 
 .subscribe__form-span {
@@ -107,17 +106,28 @@
         padding-bottom: 219px;
     }
 
-    .subscribe__content-item {
-        margin: 0 auto;
-    }
-
     .subscribe__form-text {
         padding-top: 24px;
         margin-bottom: 27px;
     }
+
+    .subscribe__content-item {
+        margin: 0 auto;
+    }
+
+    .subscribe {
+        background-size: cover;
+        background-position: left;
+    }
 }
 
 @include mobile {
+
+    .subscribe {
+        background-size: cover;
+        background-position: left;
+    }
+
     .subscribe__content {
         flex-direction: column;
         padding-top: 54px;

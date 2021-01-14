@@ -19,8 +19,6 @@
     align-items: center;
 }
 
-
-
 .fetured__title {
     margin-top: 97px;
     text-align: center;
@@ -47,7 +45,7 @@
 
 .fetured__item {
     margin-top: 30px;
-    min-width: 33%;
+    
 }
 
 .fetured__item-pic:hover .fetured__item-img {
@@ -60,8 +58,8 @@
 
 .fetured__item-text {
     margin-top: 0px;
-    width: 343px;
-    height: 162px;
+    min-width: 330px;
+    min-height: 162px;
     background-color: #F8F8F8;
     padding-left: 17px;
     padding-top: 25px;
@@ -92,14 +90,15 @@
 }
 
 .fetured__all {
+    display: block;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
     border: 1px solid #FF6A6A;
     width: 211px;
     height: 47px;
-    margin-top: 63px;
     margin: 0 auto;
+    margin-top: 63px;
     background: #FFFFFF;
 }
 
@@ -115,11 +114,7 @@
 
     .fetured__item {
         margin-top: 17px;
-        width: 49%;
-    }
-
-    .fetured__all {
-        margin: 0 auto;
+        min-width: 49%;
     }
 }
 
@@ -135,11 +130,10 @@
 
     .fetured__item {
         margin-top: 17px;
-        width: 100%;
+        min-width: 100%;
     }
 
     .fetured__all {
-        margin: 0 auto;
         margin-top: 41px;
     }
 }

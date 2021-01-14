@@ -60,7 +60,7 @@ table {
 }
 
 body {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Arial", "Helvetica", sans-serif;
 }
 
 .container {
@@ -98,7 +98,7 @@ button:active {
   }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .container {
     width: 92%;
   }
@@ -205,7 +205,7 @@ button:active {
   color: #6F6E6E;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .header__menu-item:not(:first-child) {
     display: none;
   }
@@ -273,7 +273,7 @@ button:active {
   }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .brand__image {
     display: none;
   }
@@ -374,6 +374,8 @@ button:active {
   .stock__item {
     width: 32%;
     height: 167px;
+    background-size: cover;
+    background-position: left;
   }
   .stock__item:last-child {
     margin-top: 19px;
@@ -381,7 +383,7 @@ button:active {
   }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .stock__list {
     margin-top: 32px;
   }
@@ -389,6 +391,8 @@ button:active {
     width: 100%;
     min-height: 247px;
     margin-top: 32px;
+    background-size: cover;
+    background-position: left;
   }
   .stock__item:last-child {
     min-height: 111px;
@@ -452,7 +456,6 @@ button:active {
 
 .fetured__item {
   margin-top: 30px;
-  min-width: 33%;
 }
 
 .fetured__item-pic:hover .fetured__item-img {
@@ -466,8 +469,8 @@ button:active {
 
 .fetured__item-text {
   margin-top: 0px;
-  width: 343px;
-  height: 162px;
+  min-width: 330px;
+  min-height: 162px;
   background-color: #F8F8F8;
   padding-left: 17px;
   padding-top: 25px;
@@ -498,14 +501,15 @@ button:active {
 }
 
 .fetured__all {
+  display: block;
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
   border: 1px solid #FF6A6A;
   width: 211px;
   height: 47px;
-  margin-top: 63px;
   margin: 0 auto;
+  margin-top: 63px;
   background: #FFFFFF;
 }
 
@@ -518,14 +522,11 @@ button:active {
   }
   .fetured__item {
     margin-top: 17px;
-    width: 49%;
-  }
-  .fetured__all {
-    margin: 0 auto;
+    min-width: 49%;
   }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .fetured__title {
     margin-top: 64px;
   }
@@ -534,10 +535,9 @@ button:active {
   }
   .fetured__item {
     margin-top: 17px;
-    width: 100%;
+    min-width: 100%;
   }
   .fetured__all {
-    margin: 0 auto;
     margin-top: 41px;
   }
 }
@@ -606,7 +606,7 @@ button:active {
   }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .info {
     margin-top: 96px;
     min-height: 610px;
@@ -625,7 +625,8 @@ button:active {
 
 .subscribe {
   min-height: 448px;
-  background-image: url(../../img/subscribebckgr.png);
+  background-image: url(../img/subscribebckgr.png);
+  background-position: center;
 }
 
 .subscribe__content {
@@ -664,8 +665,6 @@ button:active {
   text-align: center;
   color: #222224;
   margin-bottom: 32px;
-  width: 557px;
-  height: 61px;
 }
 
 .subscribe__form-span {
@@ -783,16 +782,24 @@ button:active {
     padding-top: 53px;
     padding-bottom: 219px;
   }
-  .subscribe__content-item {
-    margin: 0 auto;
-  }
   .subscribe__form-text {
     padding-top: 24px;
     margin-bottom: 27px;
   }
+  .subscribe__content-item {
+    margin: 0 auto;
+  }
+  .subscribe {
+    background-size: cover;
+    background-position: left;
+  }
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
+  .subscribe {
+    background-size: cover;
+    background-position: left;
+  }
   .subscribe__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

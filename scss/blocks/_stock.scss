@@ -65,6 +65,8 @@
     .stock__item {
         width: 32%;
         height: 167px;
+        background-size: cover;
+        background-position: left;
     }
 
     .stock__item:last-child{
@@ -82,6 +84,8 @@
         width: 100%;
         min-height: 247px;
         margin-top: 32px;
+        background-size: cover;
+        background-position: left;
     }
 
     .stock__item:last-child {
