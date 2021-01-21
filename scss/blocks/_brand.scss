@@ -2,10 +2,13 @@
     display: flex;
 }
 
-.brand__name {
-    
+.brand__image {
     width: 50%;
-    background-color: #F1E4E6;
+}
+
+.brand__name {
+    width: 50%;
+    background-color: $purple-color;
 }
 
 .brand__name-text {
@@ -14,14 +17,14 @@
     font-weight: 900;
     font-size: 48px;
     line-height: 48px;
-    color: #222222;
+    color: $black-color;
     padding-top: 335px;
     padding-left: 92px;
 }
 
 .brand__name-text::before {
     position: absolute;
-    background-color: #F16D7F;
+    background-color: $pink-color;
     content: "";
     width: 12px;
     height: 92px;
@@ -34,16 +37,11 @@
 }
 
 .othercolor{
-    color: #F16D7F;
+    color: $pink-color;
 }
 
-
 @include tablet {
-    .brand__image {
-        width: 50%;
-        
-    }
-
+   
     .brand__name-text {
         font-size: 44px;
         line-height: 34px;
@@ -62,6 +60,7 @@
 }
 
 @include mobile {
+    
     .brand__image {
         display: none;
     }
@@ -89,6 +88,5 @@
         font-size: 20px;
     }
 
-    
 }
 

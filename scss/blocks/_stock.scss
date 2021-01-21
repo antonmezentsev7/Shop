@@ -9,7 +9,6 @@
     text-decoration-line: none;
 }
 
-
 .stock__item {
     width: 360px;
     height: 260px;
@@ -25,7 +24,7 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #FFFFFF;
+    color: $white-color;
 }
 
 .stock__item-info {
@@ -34,7 +33,7 @@
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #F16D7F;
+    color: $pink-color;
 }
 
 .stock__item:first-child {
@@ -58,24 +57,27 @@
 
 
 @include tablet {
+
     .stock__list {
         margin-top: 19px;
     }
 
     .stock__item {
         width: 32%;
-        height: 167px;
+        min-height: 167px;
         background-size: cover;
         background-position: left;
     }
 
     .stock__item:last-child{
         margin-top: 19px;
-        height: 116px;
+        min-height: 116px;
     }
+
 }
 
 @include mobile {
+
     .stock__list {
         margin-top: 32px;
     }
@@ -91,4 +93,5 @@
     .stock__item:last-child {
         min-height: 111px;
     }
+    
 }

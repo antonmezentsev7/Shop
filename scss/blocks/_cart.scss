@@ -1,58 +1,57 @@
 .cart {
+    margin-top: 96px;
     display: flex;
-
+    justify-content: space-between;
 }
 
-.cart__shopper {
-    margin-top: 56px;
+.shopper-item {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    min-height: 306px;
+    box-shadow: 0.4em 0.4em 10px rgba(122, 122, 122, 0.5);
+}
 
+.shopper-item-img {
+    width: 40%;
+    height: 100%;
+}
 
+.shopper-item-content {
+    width: 60%;
+    height: 306px;
+    position: relative;
+}
 
-    .shopper-item {
-        margin-top: 40px;
-        display: flex;
-        width: 652px;
-        height: 306px;
-        box-shadow: 0.4em 0.4em 10px rgba(122, 122, 122, 0.5);
+.shopper-item-title {
+    max-width: 260px;
+    max-height: 58px;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black-color;
+    margin-top: 22px;
+    margin-left: 31px;
+}
 
-        .shopper-item-content {
-            width: 390px;
-            height: 306px;
-            position: relative;
+.shopper-item-text {
+    margin-top: 42px;
+    margin-left: 31px;
+    font-size: 22px;
+    line-height: 26px;
+    color: $grey-color;
+}
 
-            .shopper-item-title {
-                width: 260px;
-                height: 58px;
-                text-transform: uppercase;
-                font-size: 24px;
-                line-height: 29px;
-                color: #222222;
-                margin-top: 22px;
-                margin-left: 31px;
-            }
+.shopper-item-price {
+    color: $pink-color;
+}
 
-            .shopper-item-text {
-                margin-top: 42px;
-                margin-left: 31px;
-                font-size: 22px;
-                line-height: 26px;
-                color: #575757;
-            }
-
-            .shopper-item-price {
-                color: $pink-color;
-            }
-
-            .cross {
-                position: absolute;
-                right: 28px;
-                top: 28px
-            }
-
-
-        }
-    }
-
+.cross__button {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    border: none;
+    background: transparent;
 }
 
 .cart__shopper-buttons {
@@ -63,7 +62,6 @@
     width: 652px;
 }
 
-
 .cart__shopper-button {
     text-transform: uppercase;
     width: 225px;
@@ -72,13 +70,13 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: $black-color;
     background: #FFFFFF;
 }
 
-.cart__form {
-    margin-top: 96px;
-    margin-left: 129px;
+.cart__form-inputs {
+    display: flex;
+    flex-direction: column;
 }
 
 .cart__form-label {
@@ -86,7 +84,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #222222;
+    color: $black-color;
 }
 
 input#country,
@@ -111,20 +109,28 @@ input#postcode {
     background-color: $white-color;
 }
 
-.form-subtotal {
+.cart__form-subtotal {
     width: 360px;
     height: 214px;
     background: #F5F3F3;
     margin-top: 57px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-subtotal-text {
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .form-subtotal-title {
     text-transform: uppercase;
     font-size: 11px;
     line-height: 13px;
-    color: #4A4A4A;
+    color: $grey-color;
     margin-top: 39px;
-    margin-left: 218px;
 }
 
 .form-subtotal-grand {
@@ -132,9 +138,8 @@ input#postcode {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #222222;
+    color: $black-color;
     margin-top: 12px;
-    margin-left: 153px;
 }
 
 .form-subtotall-price {
@@ -146,13 +151,126 @@ input#postcode {
     width: 273px;
     height: 50px;
     margin-top: 39px;
-    margin-left: 44px;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: $white-color;
     background-color: $pink-color;
     border: none;
 }
 
+@include tablet {
+    .cart {
+        flex-direction: column;
+        margin-top: 59px;
+        padding-bottom: 128px;
+    }
 
+    .cart__shopper-item {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .cart__shopper-buttons {
+        margin: 0 auto;
+        margin-top: 62px;
+    }
+
+    .cart__form {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 64px;
+    }
+
+    .cart__form-inputs {
+        width: 50%;
+    }
+
+    input#country,
+    input#state,
+    input#postcode {
+        width: 90%;
+        min-height: 45px;
+    }
+
+    .cart__form-subtotal {
+        width: 50%;
+    }
+
+    .form-subtotal {
+        margin-top: 39px;
+    }
+
+    .cart__shopper-buttons {
+        width: 66%;
+    }
+}
+
+@include mobile {
+    .cart {
+        margin-top: 0px;
+        flex-direction: column;
+        padding-bottom: 96px;
+    }
+
+    .cart__shopper-item {
+        min-width: 95%;
+        min-height: 188px;
+    }
+
+    .shopper-item-img {
+        min-width: 143px;
+        min-height: 188px;
+    }
+
+    .shopper-item-content {
+        height: 188px;
+    }
+
+    .shopper-item-title {
+        max-width: 140px;
+        max-height: 35px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .shopper-item-text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .cross {
+        width: 9px;
+        height: 9px;
+    }
+
+    .cart__shopper-buttons {
+        width: 95%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .cart__shopper-button {
+        width: 175px;
+        height: 33px;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 0;
+    }
+
+    input#country,
+    input#state,
+    input#postcode {
+        width: 95%;
+    }
+
+    .form-subtotal {
+        width: 95%;
+    }
+
+    .form-subtotal-text {
+        align-items: flex-end;
+    }
+}

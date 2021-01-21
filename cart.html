@@ -32,8 +32,7 @@
     </header>
     <main class="main">
         <section class="page__title">
-            <h1 class="visually-hidden">page__title</h1>
-            <h2 class="page__title-text container">shopping cart</h2>
+            <h1 class="page__title-text container">shopping cart</h1>
         </section>
         <section class="cart container">
             <h1 class="visually-hidden">cart</h1>
@@ -48,7 +47,7 @@
                             Size: Xl<br>
                             Quantity: 2<br>
                         </p>
-                        <button type="button">
+                        <button type="button" class="cross__button">
                             <img class="cross" src="img/cross.svg" alt="Закрыть" width="18" height="18">
                         </button>
                     </div>
@@ -63,7 +62,7 @@
                             Size: Xl<br>
                             Quantity: 2<br>
                         </p>
-                        <button type="button">
+                        <button type="button" class="cross__button">
                             <img class="cross" src="img/cross.svg" alt="Закрыть" width="18" height="18">
                         </button>
                     </div>
@@ -74,15 +73,19 @@
                 </div>
             </div>
             <form action="#" class="cart__form">
-                <label class="cart__form-label" for="country">shipping adress</label>
-                <input type="text" id="country" placeholder="Country">
-                <input type="text" id="state" placeholder="State">
-                <input type="text" id="postcode" placeholder="Postcode / Zip">
-                <button class="cart__form-button">get a quote</button>
+                <div class="cart__form-inputs">
+                    <label class="cart__form-label" for="country">shipping adress</label>
+                    <input type="text" id="country" placeholder="Country">
+                    <input type="text" id="state" placeholder="State">
+                    <input type="text" id="postcode" placeholder="Postcode / Zip">
+                    <button class="cart__form-button">get a quote</button>
+                </div>
                 <div class="cart__form-subtotal form-subtotal">
-                    <h2 class="form-subtotal-title">sub total $900</h2>
-                    <h3 class="form-subtotal-grand">grand total <span class="form-subtotall-price">$900</span></h3>
-                    <button type="button" class="form-subtotal-button">proceed to checkout</button>
+                    <div class="form-subtotal-text">
+                        <h2 class="form-subtotal-title">sub total $900</h2>
+                        <h3 class="form-subtotal-grand">grand total <span class="form-subtotall-price">$900</span></h3>
+                        <button type="button" class="form-subtotal-button">proceed to checkout</button>
+                    </div>
                 </div>
             </form>
 
