@@ -1,10 +1,59 @@
 .page__title {
     height: 148px;
-    background-color: $grey-color;
+    background-color: $light-pink-color;
+    display: flex;
+    align-items: center;
+}
+
+.page__title-box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .page__title-text {
     text-transform: uppercase;
-    padding-top: 59px;
     color: $pink-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.page__title-breadcrumb {
+    display: flex;
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    color: $light-grey-color;
+}
+
+.page__breadcrumb-item {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.page__breadcrumb-item-active {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pink-color;
+}
+
+@include mobile {
+    
+    .page__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .page__title-text {
+        width: 45%;
+    }
+    
 }

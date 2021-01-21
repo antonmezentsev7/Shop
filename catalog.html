@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -31,52 +32,63 @@
         </div>
     </header>
     <main>
-        <section class="brand">
-            <img class="brand__image" src="img/man_in_jacket.svg" alt="Мужчина в пальто">
-            <div class="brand__name">
-                <h1 class="brand__name-text">the brand<br><span class="brand__name-span">of luxerious <span
-                            class="othercolor">fashion</span></span></h1>
+        <section class="page__title">
+            <h1 class="visually-hidden">page__title</h1>
+            <h2 class="page__title-text container">new arrivals</h2>
+        </section>
+        <section class="fetured container catalog__fetured">
+            <div class="catalog__fetured-panel">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdowns_button dropdowns_filter" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        filter
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdowns catalog__fetured-dropdowns">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle dropdowns_button" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            trending now
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle dropdowns_button" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            size
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle dropdowns_button" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            price
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section class="stock container">
-            <h2 class="visually-hidden">STOCK</h2>
-            <ul class="stock__list">
-                <li class="stock__item">
-                    <div class="stock__item-content"><a href="#" class="stock__item-link">
-                            <h2 class="stock__item-name">30% off</h2>
-                            <p class="stock__item-info">for women</p>
-                        </a></div>
-                </li>
-                <li class="stock__item">
-                    <div class="stock__item-content"><a href="#" class="stock__item-link">
-                            <h2 class="stock__item-name">hot deal</h2>
-                            <p class="stock__item-info">for men</p>
-                        </a></div>
-                </li>
-                <li class="stock__item">
-                    <div class="stock__item-content"><a href="#" class="stock__item-link">
-                            <h2 class="stock__item-name">new arrivals</h2>
-                            <p class="stock__item-info">for kids</p>
-                        </a></div>
-                </li>
-                <li class="stock__item">
-                    <div class="stock__item-content"><a href="#" class="stock__item-link">
-                            <h2 class="stock__item-name">luxirous & trendy</h2>
-                            <p class="stock__item-info">accesories</p>
-                        </a></div>
-                </li>
-            </ul>
-        </section>
-
-        <section class="fetured container">
             <h2 class="visually-hidden">fetured container</h2>
-            <div class="fetured__title">
-                <h2 class="fetured__title-text">Fetured items</h2>
-                <span class="fetured__title-info">Shop for items based on what we featured in this week</span>
-            </div>
             <ul class="fetured__list">
-                <li class="fetured__item">
+                <li class="fetured__item product__fetured-item">
                     <div class="fetured__item-pic">
                         <img src="img/fetured1.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
                         <button type="button" class="featured__item-add">
@@ -91,7 +103,7 @@
                         <p class="fetured__item-price">$52.00</p>
                     </div>
                 </li>
-                <li class="fetured__item">
+                <li class="fetured__item product__fetured-item">
                     <div class="fetured__item-pic">
                         <img src="img/fetured2.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
                         <button type="button" class="featured__item-add">
@@ -106,7 +118,7 @@
                         <p class="fetured__item-price">$52.00</p>
                     </div>
                 </li>
-                <li class="fetured__item">
+                <li class="fetured__item product__fetured-item">
                     <div class="fetured__item-pic">
                         <img src="img/fetured3.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
                         <button type="button" class="featured__item-add">
@@ -121,7 +133,7 @@
                         <p class="fetured__item-price">$52.00</p>
                     </div>
                 </li>
-                <li class="fetured__item">
+                <li class="fetured__item product__fetured-item">
                     <div class="fetured__item-pic">
                         <img src="img/fetured4.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
                         <button type="button" class="featured__item-add">
@@ -136,7 +148,7 @@
                         <p class="fetured__item-price">$52.00</p>
                     </div>
                 </li>
-                <li class="fetured__item">
+                <li class="fetured__item product__fetured-item">
                     <div class="fetured__item-pic">
                         <img src="img/fetured5.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
                         <button type="button" class="featured__item-add">
@@ -151,7 +163,7 @@
                         <p class="fetured__item-price">$52.00</p>
                     </div>
                 </li>
-                <li class="fetured__item">
+                <li class="fetured__item product__fetured-item">
                     <div class="fetured__item-pic">
                         <img src="img/fetured6.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
                         <button type="button" class="featured__item-add">
@@ -167,9 +179,26 @@
                     </div>
                 </li>
             </ul>
-            <button type="button" class="fetured__all">Browse All Product</button>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center fetured__pagination">
+                    <li class="page-item pagination__item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><img
+                                src="img/pagination__arrow.svg" alt=""></a>
+                    </li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">.....</a></li>
+                    <li class="page-item pagination__item"><a class="page-link" href="#">20</a></li>
+                    <li class="page-item pagination__item">
+                        <a class="page-link pagination__item" href="#"><img src="img/pagination__arrow2.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
         </section>
-
         <section class="info">
             <h2 class="visually-hidden">info</h2>
             <ul class="info__list container">
@@ -235,7 +264,3 @@
             </ul>
         </section>
     </footer>
-
-</body>
-
-</html>
