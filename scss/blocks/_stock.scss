@@ -11,7 +11,7 @@
 
 .stock__item {
     width: 360px;
-    height: 260px;
+    min-height: 260px;
     display: flex;
 }
 
@@ -53,7 +53,7 @@
 
 .stock__item:last-child {
     width: 100%;
-    height: 180px;
+    min-height: 180px;
     background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/stock_other.png);
     background-color: $grey-color;
     margin-top: 30px;

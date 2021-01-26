@@ -7,6 +7,10 @@
     height: 100%;
 }
 
+.fetured__item-text {
+    min-height: 162px;
+}
+
 .featured__item-add {
     position: absolute;
     background-color: transparent;
@@ -39,6 +43,7 @@
     font-size: 14px;
     line-height: 17px;
     color: $light-grey-color;
+    min-height: 51px;
 }
 
 .fetured__list {
@@ -50,6 +55,7 @@
 
 .fetured__item {
     margin-top: 30px;
+    min-height: 581px;
 }
 
 .fetured__item-pic:hover .fetured__item-img {

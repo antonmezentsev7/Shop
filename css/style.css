@@ -229,6 +229,7 @@ button:active {
 
 .brand__image {
   width: 50%;
+  height: 100%;
 }
 
 .brand__name {
@@ -325,7 +326,7 @@ button:active {
 
 .stock__item {
   width: 360px;
-  height: 260px;
+  min-height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +373,7 @@ button:active {
 
 .stock__item:last-child {
   width: 100%;
-  height: 180px;
+  min-height: 180px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/stock_other.png);
   background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/stock_other.png);
   background-color: #5D5D5D;
@@ -420,6 +421,10 @@ button:active {
   height: 100%;
 }
 
+.fetured__item-text {
+  min-height: 162px;
+}
+
 .featured__item-add {
   position: absolute;
   background-color: transparent;
@@ -457,6 +462,7 @@ button:active {
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
+  min-height: 51px;
 }
 
 .fetured__list {
@@ -473,6 +479,7 @@ button:active {
 
 .fetured__item {
   margin-top: 30px;
+  min-height: 581px;
 }
 
 .fetured__item-pic:hover .fetured__item-img {
