@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="index.html"><img class="header__search-logo" src="img/logo.svg" alt="Лого" width="44"
+                        height="38"></a>
+                <button type="button" class="header__search-loupe"><img class="header__search-logo" src="img/loupe.svg"
+                        alt="Поиск" width="26" height="26"></button>
+            </div>
+
+            <ul class="header__menu-list">
+                <li class="header__menu-item"><button type="button" class="header__menu-button"><img src="img/menu.svg"
+                            alt="Меню" width="32" height="23"></button></li>
+                <li class="header__menu-item"><a href="registration.html" class="header__menu-button"><img
+                            src="img/account.svg" alt="Регисрация" width="29" height="29"></a></li>
+                <li class="header__menu-item"><a href="cart.html" class="header__menu-button"><img src="img/bucket.svg"
+                            alt="Корзина" width="32" height="29"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page__title">
+            <div class="container page__title-box">
+                <h1 class="page__title-text">new arrivals</h1>
+                <ul class="page__title-breadcrumb">
+                    <li class="page__breadcrumb-item"><a class="breadcrumb-link" href="#">home /&nbsp;</a></li>
+                    <li class="page__breadcrumb-item"><a class="breadcrumb-link" href="#">men /&nbsp;</a></li>
+                    <li class="page__breadcrumb-item-active">new arrivals</li>
+                </ul>
+            </div>
+        </section>
+        <section class="slider">
+            <h2 class="visually-hidden">slider</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/product.png" class="d-block carousel__img" alt="..." width="597" height="724">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+        <section class="item__details container">
+            <h3 class="item__details-collection">woman collection</h3>
+            <h2 class="item__details-name">moschino cheap and chic</h2>
+            <p class="item__details-description">Compellingly actualize fully researched processes before proactive
+                outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                Completely visualize parallel core competencies rather than exceptional portals.</p>
+            <p class="item__details-price">$561</p>
+            <hr>
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdowns_button" type="button" data-bs-toggle=" dropdown"
+                        aria-expanded="false">
+                        choose color
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdowns_button" type="button" data-bs-toggle=" dropdown"
+                        aria-expanded="false">
+                        choose size
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle dropdowns_button" type="button" data-bs-toggle=" dropdown"
+                        aria-expanded="false">
+                        quantity
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="item__details-add">
+                <img src="img/bucket_pink.svg" alt="Корзина" width="25" height="23">
+                <span class="item__details-addtext">Add to Cart</span>
+            </button>
+        </section>
+        <section class="product__fetured container">
+            <ul class="fetured__list">
+                <li class="fetured__item product__fetured-item">
+                    <div class="fetured__item-pic">
+                        <img src="img/fetured1.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
+                        <button type="button" class="featured__item-add">
+                            <img src="img/bucket.svg" alt="Корзина" width="25" height="23">
+                            <span class="featured__item-addtext">Add to Cart</span>
+                        </button>
+                    </div>
+                    <div class="fetured__item-text">
+                        <h3 class="fetured__item-title">ellery x m'o capsule</h3>
+                        <p class="fetured__item-info">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="fetured__item product__fetured-item">
+                    <div class="fetured__item-pic">
+                        <img src="img/fetured2.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
+                        <button type="button" class="featured__item-add">
+                            <img src="img/bucket.svg" alt="Корзина" width="25" height="23">
+                            <span class="featured__item-addtext">Add to Cart</span>
+                        </button>
+                    </div>
+                    <div class="fetured__item-text">
+                        <h3 class="fetured__item-title">ellery x m'o capsule</h3>
+                        <p class="fetured__item-info">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="fetured__item product__fetured-item">
+                    <div class="fetured__item-pic">
+                        <img src="img/fetured3.svg" alt="Избранное" class="fetured__item-img" width="360" height="420">
+                        <button type="button" class="featured__item-add">
+                            <img src="img/bucket.svg" alt="Корзина" width="25" height="23">
+                            <span class="featured__item-addtext">Add to Cart</span>
+                        </button>
+                    </div>
+                    <div class="fetured__item-text">
+                        <h3 class="fetured__item-title">ellery x m'o capsule</h3>
+                        <p class="fetured__item-info">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <section class="subscribe">
+                <ul class="subscribe__content container">
+                    <li class="subscribe__content-item">
+                        <img src="img/subscribe_face.svg" alt="Фото девушки" class="subscribe__content-img" width="96"
+                            height="96">
+                        <p class="subscribe__content-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            <span class="subscribe__content-span"> a pulvinar purus condimentum“</span></p>
+                    </li>
+                    <li class="subscribe__content-item">
+                        <h2 class="subscribe__form-text">subscribe <br>
+                            <span class="subscribe__form-span">for our newletter and promotion</span></h2>
+                        <form class="subscribe__form">
+                            <input class="subscribe__form-input" placeholder="Enter Your Email" type="text">
+                            <button type="button" class="subscribe__form-button">Subscribe</button>
+                        </form>
+                    </li>
+                </ul>
+            </section>
+            <section class="socials">
+                <ul class="socials__list container">
+                    <li class="social__item">
+                        <h2 class="rights">© 2021 Brand All Rights Reserved.</h2>
+                    </li>
+                    <li class="social__item">
+                        <ul class="social__item-icons">
+                            <li class="social__item-icon"><a href="#" class="social__item-link"><img
+                                        src="img/facebook.svg" alt="Facebook" class="social__item-img" width="31"
+                                        height="32"></a></li>
+                            <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/inst.svg"
+                                        alt="Instagram" class="social__item-img" width="31" height="32"></a></li>
+                            <li class="social__item-icon"><a href="#" class="social__item-link"><img src="img/pint.svg"
+                                        alt="Pinterest" class="social__item-img" width="31" height="32"></a></li>
+                            <li class="social__item-icon"><a href="#" class="social__item-link"><img
+                                        src="img/twitter.svg" alt="Twitter" class="social__item-img" width="31"
+                                        height="32"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

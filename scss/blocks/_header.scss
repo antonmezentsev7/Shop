@@ -1,5 +1,5 @@
 .header {
-    background-color: #222222;
+    background-color: $black-color;
     height: 75px;
     position: relative;
 }
@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: center;
-    
 }
 
 .header__logo {
@@ -30,6 +29,7 @@
 .header__menu-list {
     display: flex;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .header__menu-button {
@@ -42,7 +42,7 @@
 }
 
 .header__navigation {
-    background-color: #FFFFFF;
+    background-color: $white-color;
     position: absolute;
     width: 230px;
     height: 764px;
@@ -54,7 +54,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: $black-color;
     margin-top: 37px;
     margin-left: 31px;
     margin-bottom: 24px;
@@ -65,7 +65,7 @@
     text-transform: uppercase;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: $pink-color;
 }
 
 .header__havigation-categorie {
@@ -76,12 +76,34 @@
     margin-top: 12px;
     font-size: 14px;
     line-height: 17px;
-    color: #6F6E6E;
+    color: $light-grey-color;
     margin-left: 11px;
     margin-bottom: 11px;
 }
 
 .navigation-sublist-link {
     text-decoration: none;
-    color: #6F6E6E;
+    color: $light-grey-color;
+}
+
+
+@include tablet {
+
+    .header__container {
+        width: 92%;
+    }
+
+}
+
+
+@include mobile {
+
+    .header__menu-item:not(:first-child) {
+        display: none;
+    }
+    
+    .header__menu-item:first-child {
+        margin-right: 0;
+    }
+    
 }

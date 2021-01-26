@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -22,7 +21,7 @@
             </div>
 
             <ul class="header__menu-list">
-                <li class="header__menu-item"><button type="menu" class="header__menu-button"><img src="img/menu.svg"
+                <li class="header__menu-item"><button type="button" class="header__menu-button"><img src="img/menu.svg"
                             alt="Меню" width="32" height="23"></button></li>
                 <li class="header__menu-item"><a href="registration.html" class="header__menu-button"><img
                             src="img/account.svg" alt="Аккаунт" width="29" height="29"></a></li>
@@ -33,12 +32,11 @@
     </header>
     <main class="main">
         <section class="page__title">
-            <h1 class="visually-hidden">page__title</h1>
-            <h2 class="page__title-text container">registration</h2>
+            <h1 class="page__title-text container">registration</h1>
         </section>
         <section class="registration container">
-            <div class="registration__form">
-                <form action="#">
+            <form class="registration__form">
+                <fieldset class="registration__fieldset">
                     <label class="label" for="name">Your Name</label>
                     <input type="text" id="name" placeholder="First Name">
                     <input type="text" id="lastname" placeholder="Last Name">
@@ -48,7 +46,7 @@
                         <input type="radio" id="female" name="gender" value="female">
                         <label class="label-radio" for="female">Female</label>
                     </div>
-                    <label class="label" for="login">Login Details</label>
+                    <label class="label__login" for="login">Login Details</label>
                     <input type="text" id="login" placeholder="Login">
                     <input type="password" id="password" placeholder="Password">
                     <p class="form__text">Please use 8 or more characters, with at least 1 number and a <br> mixture of
@@ -57,8 +55,8 @@
                         <span class="form__button-text">join now</span>
                         <img class="form__button-img" src="./img/arrow.svg" alt="arrow">
                     </button>
-                </form>
-            </div>
+                </fieldset>
+            </form>
 
             <div class="registration__text">
                 <h2 class="registration__text-title">loyalty has its perks</h2>
@@ -76,7 +74,6 @@
     </main>
     <footer class="footer">
         <section class="subscribe">
-            <h2 class="visually-hidden">subscribe</h2>
             <ul class="subscribe__content container">
                 <li class="subscribe__content-item">
                     <img src="img/subscribe_face.svg" alt="Фото девушки" class="subscribe__content-img" width="96"
@@ -93,7 +90,6 @@
             </ul>
         </section>
         <section class="socials">
-            <h2 class="visually-hidden">socials</h2>
             <ul class="socials__list container">
                 <li class="social__item">
                     <h2 class="rights">© 2021 Brand All Rights Reserved.</h2>

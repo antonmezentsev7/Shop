@@ -1,0 +1,25 @@
+.catalog__fetured-panel {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+}
+
+.catalog__fetured-dropdowns {
+    display: flex;
+}
+
+@include tablet {
+
+    .catalog__fetured-panel {
+        width: 96%;
+    }
+}
+
+@include mobile {
+
+    .catalog__fetured-panel {
+        
+    }
+
+}
