@@ -140,6 +140,10 @@
         min-width: 49%;
     }
 
+    .product__fetured-item:last-child {
+        display: none;
+    }
+
 }
 
 
@@ -160,6 +164,10 @@
 
     .fetured__all {
         margin-top: 41px;
+    }
+
+    .product__fetured-item:last-child {
+        display: none;
     }
 
 }

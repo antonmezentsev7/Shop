@@ -5,6 +5,11 @@
     margin-top: 64px;
 }
 
+.registration__fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
 .label {
     font-weight: 300;
     font-size: 16px;

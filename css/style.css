@@ -150,6 +150,7 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0px;
 }
 
 .header__menu-button {
@@ -354,16 +355,19 @@ button:active {
 .stock__item:first-child {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/stock_woman.png);
   background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/stock_woman.png);
+  background-color: #5D5D5D;
 }
 
 .stock__item:nth-child(2) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/stock_man.png);
   background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/stock_man.png);
+  background-color: #5D5D5D;
 }
 
 .stock__item:nth-child(3) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/stock_kids.png);
   background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/stock_kids.png);
+  background-color: #5D5D5D;
 }
 
 .stock__item:last-child {
@@ -371,6 +375,7 @@ button:active {
   height: 180px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 22, 22, 0.7)), to(rgba(33, 22, 22, 0.7))), url(../img/stock_other.png);
   background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/stock_other.png);
+  background-color: #5D5D5D;
   margin-top: 30px;
 }
 
@@ -554,6 +559,9 @@ button:active {
     margin-top: 17px;
     min-width: 49%;
   }
+  .product__fetured-item:last-child {
+    display: none;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -569,6 +577,9 @@ button:active {
   }
   .fetured__all {
     margin-top: 41px;
+  }
+  .product__fetured-item:last-child {
+    display: none;
   }
 }
 
@@ -656,6 +667,7 @@ button:active {
 .subscribe {
   min-height: 448px;
   background-image: url(../img/subscribebckgr.png);
+  background-color: #FFFFFF;
   background-size: 100%;
 }
 
@@ -951,6 +963,16 @@ button:active {
           justify-content: space-between;
   min-height: 675px;
   margin-top: 64px;
+}
+
+.registration__fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .label {
@@ -1468,6 +1490,11 @@ input#postcode {
   background-color: #F7F7F7;
 }
 
+.slider {
+  position: relative;
+  z-index: 1;
+}
+
 .item__details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1479,8 +1506,12 @@ input#postcode {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
   min-height: 601px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
 }
 
 .item__details-collection {
