@@ -12,6 +12,11 @@
     text-align: center;
 }
 
+.subscribe__content-item {
+    max-width: 236px;
+    min-height: 359px;
+}
+
 .subscribe__content-img {
     margin-bottom: 40px;
 }
@@ -21,8 +26,8 @@
     line-height: 24px;
     text-align: center;
     color: $black-color;
-    width: 359px;
-    height: 99px;
+    max-width: 359px;
+    min-height: 99px;
 }
 
 .subscribe__content-span {

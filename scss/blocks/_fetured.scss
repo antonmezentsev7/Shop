@@ -7,10 +7,6 @@
     height: 100%;
 }
 
-.fetured__item-text {
-    min-height: 162px;
-}
-
 .featured__item-add {
     position: absolute;
     background-color: transparent;
@@ -73,10 +69,14 @@
     background-color: $white-color;
     padding-left: 17px;
     padding-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .fetured__item-title {
     text-transform: uppercase;
+    max-width: 150px;
+    min-height: 28px;
     font-size: 13px;
     line-height: 16px;
     color: $black-color;
@@ -84,16 +84,18 @@
 }
 
 .fetured__item-info {
+    min-height: 69px;
+    max-width: 314px;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: $grey-color;
     padding-bottom: 18px;
-    width: 314px;
-    height: 51px;
 }
 
 .fetured__item-price {
+    max-width: 60px;
+    min-height: 28px;
     font-size: 16px;
     line-height: 19px;
     color: $pink-color;

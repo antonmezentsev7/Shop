@@ -421,10 +421,6 @@ button:active {
   height: 100%;
 }
 
-.fetured__item-text {
-  min-height: 162px;
-}
-
 .featured__item-add {
   position: absolute;
   background-color: transparent;
@@ -498,10 +494,19 @@ button:active {
   background-color: #FFFFFF;
   padding-left: 17px;
   padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .fetured__item-title {
   text-transform: uppercase;
+  max-width: 150px;
+  min-height: 28px;
   font-size: 13px;
   line-height: 16px;
   color: #222222;
@@ -509,16 +514,18 @@ button:active {
 }
 
 .fetured__item-info {
+  min-height: 69px;
+  max-width: 314px;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #5D5D5D;
   padding-bottom: 18px;
-  width: 314px;
-  height: 51px;
 }
 
 .fetured__item-price {
+  max-width: 60px;
+  min-height: 28px;
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
@@ -611,6 +618,7 @@ button:active {
 
 .info__item {
   text-align: center;
+  max-width: 30%;
 }
 
 .info__item-img {
@@ -668,6 +676,7 @@ button:active {
   }
   .info__item {
     padding-top: 48px;
+    max-width: 95%;
   }
 }
 
@@ -689,6 +698,11 @@ button:active {
   text-align: center;
 }
 
+.subscribe__content-item {
+  max-width: 236px;
+  min-height: 359px;
+}
+
 .subscribe__content-img {
   margin-bottom: 40px;
 }
@@ -698,8 +712,8 @@ button:active {
   line-height: 24px;
   text-align: center;
   color: #222222;
-  width: 359px;
-  height: 99px;
+  max-width: 359px;
+  min-height: 99px;
 }
 
 .subscribe__content-span {

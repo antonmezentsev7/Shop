@@ -11,8 +11,10 @@
     align-items: center;
 }
 
+
 .info__item {
     text-align: center;
+    max-width: 30%;
 }
 
 .info__item-img {
@@ -73,6 +75,7 @@
 
     .info__item {
         padding-top: 48px;
+        max-width: 95%;
     }
 
 }    
